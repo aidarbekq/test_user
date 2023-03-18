@@ -21,7 +21,6 @@ public class AuthController {
     @Autowired
     private UserService userService;
 
-
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@Valid @RequestBody UserRegisterDto userRegisterDto) {
         if (userService.findByEmail(userRegisterDto.getEmail()) != null) {
@@ -32,6 +31,5 @@ public class AuthController {
         User user = userService.register(userRegisterDto);
         return ResponseEntity.ok(user);
     }
-
 }
 

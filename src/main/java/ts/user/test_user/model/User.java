@@ -2,7 +2,6 @@ package ts.user.test_user.model;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

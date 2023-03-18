@@ -28,5 +28,4 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
         response.put("errors", errors);
         return ResponseEntity.badRequest().body(response);
     }
-
 }
